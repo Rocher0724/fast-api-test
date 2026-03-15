@@ -1,0 +1,111 @@
+/* ============================================================
+   DARK MODE — Variable Overrides + Component Adjustments
+   ============================================================ */
+
+[data-theme="dark"] {
+  --color-bg: #0F172A;
+  --color-bg-surface: #1E293B;
+  --color-bg-elevated: #334155;
+  --color-text: #E2E8F0;
+  --color-text-secondary: #94A3B8;
+  --color-text-muted: #64748B;
+  --color-border: #334155;
+  --color-border-light: #1E293B;
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.3);
+  --shadow-md: 0 4px 6px rgba(0,0,0,0.4);
+  --shadow-lg: 0 10px 15px rgba(0,0,0,0.5);
+}
+
+/* Badges — dark variants */
+[data-theme="dark"] .badge-get    { background: #065F46; color: #A7F3D0; }
+[data-theme="dark"] .badge-post   { background: #1E3A5F; color: #93C5FD; }
+[data-theme="dark"] .badge-put    { background: #78350F; color: #FDE68A; }
+[data-theme="dark"] .badge-delete { background: #7F1D1D; color: #FECACA; }
+[data-theme="dark"] .badge-options { background: #4A148C; color: #CE93D8; }
+[data-theme="dark"] .badge-patch  { background: #581C87; color: #E9D5FF; }
+
+/* Code block */
+[data-theme="dark"] .code-block {
+  background: #1E293B;
+  border-color: #334155;
+  color: #E2E8F0;
+}
+
+[data-theme="dark"] .code-block-header {
+  background: #0F172A;
+  color: #64748B;
+}
+
+/* Inline code */
+[data-theme="dark"] code {
+  background: #334155;
+  border-color: #475569;
+  color: #E2E8F0;
+}
+
+/* Alert variants */
+[data-theme="dark"] .alert-success {
+  background: #064E3B;
+  color: #A7F3D0;
+  border-color: #065F46;
+}
+
+[data-theme="dark"] .alert-warning {
+  background: #78350F;
+  color: #FDE68A;
+  border-color: #92400E;
+}
+
+[data-theme="dark"] .alert-error {
+  background: #7F1D1D;
+  color: #FECACA;
+  border-color: #991B1B;
+}
+
+[data-theme="dark"] .alert-info {
+  background: #1E3A5F;
+  color: #93C5FD;
+  border-color: #1E40AF;
+}
+
+/* Skeleton */
+[data-theme="dark"] .skeleton {
+  background: linear-gradient(
+    90deg,
+    #1E293B 25%,
+    #334155 50%,
+    #1E293B 75%
+  );
+  background-size: 200% auto;
+}
+
+/* Nav border */
+[data-theme="dark"] .nav-header {
+  border-bottom-color: #1E293B;
+}
+
+/* Button secondary in dark mode */
+[data-theme="dark"] .btn-ghost {
+  border-color: #475569;
+  color: #94A3B8;
+}
+
+[data-theme="dark"] .btn-ghost:hover {
+  background: #334155;
+  color: #E2E8F0;
+}
+
+/* Sidebar */
+[data-theme="dark"] .sidebar {
+  border-right-color: #1E293B;
+  scrollbar-color: #334155 transparent;
+}
+
+[data-theme="dark"] .sidebar::-webkit-scrollbar-thumb {
+  background: #334155;
+}
+
+[data-theme="dark"] .sidebar-item:hover {
+  background: #0F172A;
+  color: #E2E8F0;
+}

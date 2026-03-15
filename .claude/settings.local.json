@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip install:*)",
+      "Bash(python3:*)",
+      "Bash(ls:*)",
+      "Bash(git:*)",
+      "Bash(.venv/bin/python --version 2>/dev/null || python3 --version)",
+      "Bash(.venv/bin/pip list:*)",
+      "Bash(python:*)",
+      "Bash(/Users/rocher/Documents/intea/fast-api-test/.venv/bin/python -c \"from app.main import app; print\\(f'Routes: {len\\(app.routes\\)}'\\); print\\('Import OK'\\)\")",
+      "Bash(pyenv versions:*)",
+      "Read(//opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/bin/**)"
+    ]
+  }
+}

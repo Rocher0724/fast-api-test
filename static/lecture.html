@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>디버깅 강의 — 에러 학습 API</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link id="hljs-theme" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11/build/styles/github.min.css">
+  <link rel="stylesheet" href="/static/css/variables.css">
+  <link rel="stylesheet" href="/static/css/base.css">
+  <link rel="stylesheet" href="/static/css/components.css">
+  <link rel="stylesheet" href="/static/css/lecture.css">
+  <link rel="stylesheet" href="/static/css/dark-mode.css">
+</head>
+<body>
+  <!-- Progress bar -->
+  <div class="progress-bar">
+    <div class="progress-bar-fill" id="progressFill"></div>
+  </div>
+
+  <!-- Nav header -->
+  <header class="nav-header">
+    <div class="nav-container">
+      <button class="menu-toggle" id="menuToggle" aria-label="메뉴">☰</button>
+      <a href="/" class="nav-logo">에러 학습 API</a>
+      <nav class="nav-links">
+        <a href="/lecture" class="nav-link active">강의</a>
+        <a href="/dashboard" class="nav-link">대시보드</a>
+        <a href="/dataflow" class="nav-link">다이어그램</a>
+        <a href="/docs" target="_blank" class="nav-link">API Docs</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" aria-label="다크모드 토글">
+        <span class="theme-icon"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile drawer -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <aside class="drawer" id="drawer">
+    <div class="sidebar-title">목차</div>
+    <nav id="drawerNav"></nav>
+  </aside>
+
+  <!-- Page layout -->
+  <div class="page-layout">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-title">목차</div>
+      <nav id="sidebarNav">
+        <!-- Filled by JS -->
+      </nav>
+    </aside>
+
+    <!-- Main content -->
+    <main class="main-content">
+      <div class="lecture-content" id="lectureContent">
+        <div class="lecture-loading">강의를 불러오는 중...</div>
+      </div>
+
+      <!-- Prev/Next navigation -->
+      <div class="lecture-nav" id="lectureNav">
+        <button class="btn btn-secondary" id="prevBtn" disabled>← 이전</button>
+        <span class="lecture-nav-info" id="navInfo"></span>
+        <button class="btn btn-secondary" id="nextBtn" disabled>다음 →</button>
+      </div>
+    </main>
+  </div>
+
+  <!-- Scripts -->
+  <script src="/static/js/theme.js"></script>
+  <script src="/static/js/config.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11/build/highlight.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script src="/static/js/markdown.js"></script>
+  <script src="/static/js/lecture.js"></script>
+</body>
+</html>
