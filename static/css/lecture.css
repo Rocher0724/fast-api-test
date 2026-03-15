@@ -81,24 +81,60 @@
   color: var(--color-text-secondary);
 }
 
+/* Table — card style */
 .lecture-content table {
   width: 100%;
-  border-collapse: collapse;
-  margin-bottom: var(--space-4);
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: var(--space-6) 0;
   font-size: 0.875rem;
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.lecture-content thead {
+  background: var(--color-primary);
+  color: #fff;
 }
 
 .lecture-content th {
-  background: var(--color-bg-elevated);
   font-weight: 600;
   text-align: left;
-  padding: var(--space-2) var(--space-3);
-  border-bottom: 2px solid var(--color-border);
+  padding: var(--space-3) var(--space-4);
+  font-family: var(--font-heading);
+  font-size: 0.8125rem;
+  letter-spacing: 0.02em;
+  border-bottom: none;
 }
 
 .lecture-content td {
-  padding: var(--space-2) var(--space-3);
+  padding: var(--space-3) var(--space-4);
   border-bottom: 1px solid var(--color-border-light);
+  vertical-align: top;
+  line-height: 1.6;
+}
+
+.lecture-content tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.lecture-content tbody tr:nth-child(even) {
+  background: var(--color-bg-elevated);
+}
+
+.lecture-content tbody tr:hover {
+  background: color-mix(in srgb, var(--color-primary) 6%, transparent);
+}
+
+.lecture-content td:first-child {
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.lecture-content td code {
+  background: color-mix(in srgb, var(--color-primary) 10%, transparent);
+  color: var(--color-primary-dark, var(--color-primary));
 }
 
 .lecture-content hr {

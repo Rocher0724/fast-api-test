@@ -73,30 +73,45 @@
     <!-- Tabs for each diagram -->
     <div class="diagram-tabs">
       <div class="tab-nav" id="diagramTabs">
-        <button class="tab-btn active" data-diagram="0">전체 흐름</button>
-        <button class="tab-btn" data-diagram="1">요청 상세</button>
-        <button class="tab-btn" data-diagram="2">확인 도구</button>
-        <button class="tab-btn" data-diagram="3">배포 흐름</button>
+        <button class="tab-btn active" data-diagram="0">1. 프론트엔드</button>
+        <button class="tab-btn" data-diagram="1">2. 네트워크</button>
+        <button class="tab-btn" data-diagram="2">3. 백엔드</button>
+        <button class="tab-btn" data-diagram="3">4. 데이터베이스</button>
+        <button class="tab-btn" data-diagram="4">요청 상세</button>
+        <button class="tab-btn" data-diagram="5">확인 도구</button>
+        <button class="tab-btn" data-diagram="6">배포 흐름</button>
       </div>
     </div>
 
     <!-- Diagram containers -->
     <div class="tab-content" id="diagramContent">
       <div class="tab-pane active diagram-card" id="diagram-0">
-        <h3>전체 데이터 흐름과 에러 발생 지점</h3>
+        <h3>1단계: 프론트엔드 (브라우저)</h3>
         <div class="mermaid" id="mermaid-0"></div>
       </div>
       <div class="tab-pane diagram-card" id="diagram-1">
-        <h3>요청(Request) 흐름 상세</h3>
+        <h3>2단계: 네트워크 (CORS 검사)</h3>
         <div class="mermaid" id="mermaid-1"></div>
       </div>
       <div class="tab-pane diagram-card" id="diagram-2">
-        <h3>에러 확인 장소 요약</h3>
+        <h3>3단계: 백엔드 (FastAPI)</h3>
         <div class="mermaid" id="mermaid-2"></div>
       </div>
       <div class="tab-pane diagram-card" id="diagram-3">
-        <h3>배포 환경에서의 데이터 흐름</h3>
+        <h3>4단계: 데이터베이스</h3>
         <div class="mermaid" id="mermaid-3"></div>
+      </div>
+      <div class="tab-pane diagram-card" id="diagram-4">
+        <h3>요청(Request) 흐름 상세</h3>
+        <div class="mermaid" id="mermaid-4"></div>
+      </div>
+      <div class="tab-pane diagram-card" id="diagram-5">
+        <h3>에러 확인 장소 요약</h3>
+        <div class="mermaid" id="mermaid-5"></div>
+      </div>
+      <div class="tab-pane diagram-card" id="diagram-6">
+        <h3>배포 환경에서의 데이터 흐름</h3>
+        <div class="mermaid" id="mermaid-6"></div>
       </div>
     </div>
   </div>
